@@ -1,0 +1,23 @@
+# UncannyBlacc Starship prompt
+add_newline = false
+
+format = "[╭─](#C99A3E) $all$character"
+right_format = "[╰─>](#C99A3E) "
+
+[character]
+success_symbol = "[❯](#F2EBDD)"
+error_symbol = "[✖](#B85C3A)"
+
+[directory]
+style = "bold #8E9B7D"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+style = "bold #C99A3E"
+symbol = "⎇ "
+
+[time]
+disabled = false
+format = "[$time](#C99A3E)"

@@ -1,0 +1,52 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "spacing": 6,
+  "margin-top": 0,
+  "margin-left": 10,
+  "margin-right": 10,
+  "modules-left": ["hyprland/workspaces", "custom/brand"],
+  "modules-center": ["clock"],
+  "modules-right": ["pulseaudio", "network", "battery", "tray"],
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "default": "◦",
+      "active": "◉"
+    },
+    "sort-by-number": true,
+    "on-scroll-up": "hyprctl dispatch workspace e-1",
+    "on-scroll-down": "hyprctl dispatch workspace e+1"
+  },
+  "custom/brand": {
+    "format": "UB",
+    "tooltip": false
+  },
+  "clock": {
+    "format": "{:%a %d %b  %H:%M}",
+    "tooltip": true,
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt>{calendar}</tt>"
+  },
+  "pulseaudio": {
+    "format": "{volume}%",
+    "format-muted": "muted",
+    "on-click": "pavucontrol"
+  },
+  "network": {
+    "format-wifi": "wifi {essid}",
+    "format-ethernet": "net",
+    "format-disconnected": "offline"
+  },
+  "battery": {
+    "format": "{capacity}%",
+    "states": {
+      "warning": 30,
+      "critical": 15
+    }
+  },
+  "tray": {
+    "icon-size": 14,
+    "spacing": 10
+  }
+}

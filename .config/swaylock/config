@@ -1,0 +1,26 @@
+# swaylock config
+ignore-empty-password = true
+font = JetBrains Mono
+font-size = 16
+show-failed-attempts = true
+image = ~/.local/share/uncannyblacc/wallpapers/uncannyblacc-dark.svg
+
+# Colors
+text-color = #F2EBDD
+text-clear-color = #F2EBDD
+text-verification-color = #C99A3E
+text-wrong-color = #B85C3A
+background-color = #171412
+ring-color = #C99A3E
+key-hl-color = #5B394F
+bs-hl-color = #B85C3A
+inside-color = rgba(23,20,18,0.7)
+inside-clear-color = rgba(23,20,18,0.7)
+inside-verification-color = rgba(23,20,18,0.7)
+inside-wrong-color = rgba(23,20,18,0.7)
+
+# Layout
+indicator-radius = 120
+indicator-thickness = 8
+clock = true
+datestr = %A, %e %B

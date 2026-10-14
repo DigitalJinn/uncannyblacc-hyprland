@@ -1,0 +1,68 @@
+* {
+  font-family: "JetBrains Mono", "Inter", sans-serif;
+  font-size: 12px;
+  border: none;
+  border-radius: 10px;
+  color: #F2EBDD;
+}
+
+window#waybar {
+  background: rgba(23, 20, 18, 0.72);
+  border-bottom: 1px solid rgba(201, 154, 62, 0.5);
+}
+
+#workspaces {
+  background: rgba(23, 20, 18, 0.35);
+  margin: 6px 10px;
+  padding: 0 8px;
+  border-radius: 10px;
+}
+
+#workspaces button {
+  background: transparent;
+  padding: 0 10px;
+  color: #F2EBDD;
+  border-radius: 8px;
+}
+
+#workspaces button.active {
+  background: rgba(184, 92, 58, 0.18);
+  color: #F2EBDD;
+  border: 1px solid rgba(201, 154, 62, 0.45);
+}
+
+#custom-brand {
+  font-family: "Georgia", serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #C99A3E;
+  margin-left: 10px;
+}
+
+#clock {
+  color: #F2EBDD;
+  background: rgba(23, 20, 18, 0.20);
+  padding: 0 12px;
+  border-radius: 8px;
+}
+
+#pulseaudio,
+#network,
+#battery,
+#tray {
+  background: rgba(23, 20, 18, 0.20);
+  padding: 0 10px;
+  border-radius: 8px;
+}
+
+#pulseaudio {
+  color: #F2EBDD;
+}
+
+#network {
+  color: #E3B65B;
+}
+
+#battery {
+  color: #C99A3E;
+}

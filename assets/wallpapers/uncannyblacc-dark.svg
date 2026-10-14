@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1200" viewBox="0 0 1920 1200">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1b1715"/>
+      <stop offset="45%" stop-color="#120f0d"/>
+      <stop offset="100%" stop-color="#030302"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5d48a"/>
+      <stop offset="25%" stop-color="#c99a3e"/>
+      <stop offset="50%" stop-color="#f1c66c"/>
+      <stop offset="100%" stop-color="#8d691a"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="24"/></filter>
+  </defs>
+  <rect width="1920" height="1200" fill="url(#bg)"/>
+
+  <circle cx="630" cy="350" r="240" fill="none" stroke="url(#gold)" stroke-width="6" opacity="0.8" filter="url(#blur)"/>
+  <circle cx="1220" cy="390" r="210" fill="none" stroke="url(#gold)" stroke-width="5" opacity="0.7"/>
+
+  <g opacity="0.55">
+    <path d="M170 680 C 280 610, 340 560, 430 635 S 620 770, 705 715" fill="none" stroke="url(#gold)" stroke-width="3"/>
+    <path d="M1180 730 C 1260 650, 1380 660, 1480 760 S 1660 860, 1780 790" fill="none" stroke="url(#gold)" stroke-width="3"/>
+  </g>
+
+  <g fill="#5B394F" opacity="0.95">
+    <circle cx="330" cy="850" r="22"/>
+    <circle cx="1500" cy="860" r="18"/>
+    <circle cx="1660" cy="920" r="22"/>
+    <circle cx="260" cy="990" r="18"/>
+  </g>
+
+  <g fill="#C99A3E" opacity="0.9">
+    <path d="M550 260 l12 28 l28 12 l-28 12 l-12 28 l-12 -28 l-28 -12 l28 -12 z"/>
+    <path d="M1380 260 l12 28 l28 12 l-28 12 l-12 28 l-12 -28 l-28 -12 l28 -12 z"/>
+    <path d="M970 110 l9 20 l20 9 l-20 9 l-9 20 l-9 -20 l-20 -9 l20 -9 z"/>
+  </g>
+
+  <g font-family="Georgia, serif" fill="#F2EBDD" text-anchor="middle">
+    <text x="960" y="620" font-size="170" font-weight="700" fill="url(#gold)">UB</text>
+    <text x="960" y="730" font-size="48" letter-spacing="6" fill="#F2EBDD">ESSAYS • OBSERVATIONS • RITUALS</text>
+    <text x="960" y="790" font-size="28" letter-spacing="10" fill="#C99A3E">OLD ROOTS, NEW RITUALS</text>
+  </g>
+
+  <g opacity="0.82">
+    <path d="M240 240 C 390 160, 520 150, 620 220" fill="none" stroke="url(#gold)" stroke-width="4"/>
+    <path d="M1305 235 C 1430 170, 1540 180, 1685 245" fill="none" stroke="url(#gold)" stroke-width="4"/>
+  </g>
+</svg>
