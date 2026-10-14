@@ -1,18 +1,136 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
   <defs>
-    <linearGradient id="gold" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#f8d884"/>
-      <stop offset="50%" stop-color="#c99a3e"/>
-      <stop offset="100%" stop-color="#8a6714"/>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7d98f"/>
+      <stop offset="18%" stop-color="#f0c96a"/>
+      <stop offset="45%" stop-color="#d79a35"/>
+      <stop offset="68%" stop-color="#f0cf83"/>
+      <stop offset="100%" stop-color="#8a6018"/>
     </linearGradient>
+    <linearGradient id="goldSoft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7dfaf"/>
+      <stop offset="100%" stop-color="#b67b1c"/>
+    </linearGradient>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1d1712"/>
+      <stop offset="100%" stop-color="#090807"/>
+    </radialGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#d0a24e" flood-opacity="0.38"/>
+    </filter>
   </defs>
-  <rect width="512" height="512" rx="64" fill="#171412"/>
-  <circle cx="256" cy="256" r="170" fill="none" stroke="url(#gold)" stroke-width="8"/>
-  <g font-family="Georgia, serif" font-size="190" font-weight="700" fill="url(#gold)" text-anchor="middle">
-    <text x="256" y="300">UB</text>
+
+  <rect width="1024" height="1024" fill="url(#bgGlow)" rx="64"/>
+
+  <!-- outer ring -->
+  <g stroke="url(#gold)" stroke-width="18" fill="none" filter="url(#softGlow)">
+    <circle cx="512" cy="512" r="412"/>
   </g>
-  <g fill="#C99A3E" opacity="0.9">
-    <path d="M120 120 l10 22 l22 10 l-22 10 l-10 22 l-10 -22 l-22 -10 l22 -10 z"/>
-    <path d="M380 120 l10 22 l22 10 l-22 10 l-10 22 l-10 -22 l-22 -10 l22 -10 z"/>
+
+  <!-- moon and star accents -->
+  <g fill="url(#gold)" stroke="url(#gold)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- top left crescent -->
+    <path d="M266 274 A116 116 0 1 1 266 506 A84 84 0 1 0 266 274Z"/>
+    <circle cx="324" cy="410" r="18" fill="url(#gold)" stroke="none"/>
+
+    <!-- top right crescent -->
+    <path d="M758 274 A116 116 0 1 0 758 506 A84 84 0 1 1 758 274Z"/>
+    <circle cx="700" cy="410" r="18" fill="url(#gold)" stroke="none"/>
+
+    <!-- bottom left crescent -->
+    <path d="M266 760 A116 116 0 1 1 266 992 A84 84 0 1 0 266 760Z"/>
+    <circle cx="324" cy="890" r="18" fill="url(#gold)" stroke="none"/>
+
+    <!-- bottom right crescent -->
+    <path d="M758 760 A116 116 0 1 0 758 992 A84 84 0 1 1 758 760Z"/>
+    <circle cx="700" cy="890" r="18" fill="url(#gold)" stroke="none"/>
+  </g>
+
+  <!-- stars -->
+  <g fill="url(#gold)" stroke="url(#gold)" stroke-width="4" stroke-linecap="round">
+    <path d="M512 130 l14 36 l36 14 l-36 14 l-14 36 l-14 -36 l-36 -14 l36 -14 z"/>
+    <path d="M186 236 l12 30 l30 12 l-30 12 l-12 30 l-12 -30 l-30 -12 l30 -12 z"/>
+    <path d="M838 236 l12 30 l30 12 l-30 12 l-12 30 l-12 -30 l-30 -12 l30 -12 z"/>
+    <path d="M196 786 l12 30 l30 12 l-30 12 l-12 30 l-12 -30 l-30 -12 l30 -12 z"/>
+    <path d="M828 786 l12 30 l30 12 l-30 12 l-12 30 l-12 -30 l-30 -12 l30 -12 z"/>
+    <path d="M512 902 l14 36 l36 14 l-36 14 l-14 36 l-14 -36 l-36 -14 l36 -14 z"/>
+  </g>
+
+  <!-- floral vine ring -->
+  <g stroke="url(#gold)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.95">
+    <path d="M310 166 C 240 160, 210 210, 228 272 C 250 345, 312 350, 350 321"/>
+    <path d="M714 166 C 784 160, 814 210, 796 272 C 774 345, 712 350, 674 321"/>
+    <path d="M310 858 C 240 864, 210 814, 228 752 C 250 679, 312 674, 350 703"/>
+    <path d="M714 858 C 784 864, 814 814, 796 752 C 774 679, 712 674, 674 703"/>
+  </g>
+
+  <!-- floral clusters -->
+  <g>
+    <!-- left upper bloom -->
+    <g transform="translate(210 236) scale(1.05)">
+      <path d="M0 0 C 24 -52, 70 -70, 110 -30 C 130 8, 110 62, 50 90 C 4 70, -18 34, 0 0Z" fill="#6d1c2d" opacity="0.92"/>
+      <circle cx="40" cy="26" r="32" fill="#b71b46"/>
+      <circle cx="85" cy="18" r="34" fill="#a51d3f"/>
+      <circle cx="72" cy="60" r="28" fill="#d14f64"/>
+      <circle cx="28" cy="61" r="22" fill="#7d243d"/>
+      <path d="M48 26 C 56 2, 62 -20, 82 -52" stroke="#c89c2d" stroke-width="7" fill="none"/>
+      <path d="M58 66 C 48 20, 26 14, 0 -20" stroke="#c89c2d" stroke-width="7" fill="none"/>
+    </g>
+
+    <!-- right upper bloom -->
+    <g transform="translate(718 236) scale(1.05)">
+      <path d="M0 0 C 24 -52, 70 -70, 110 -30 C 130 8, 110 62, 50 90 C 4 70, -18 34, 0 0Z" fill="#6d1c2d" opacity="0.92"/>
+      <circle cx="40" cy="26" r="32" fill="#b71b46"/>
+      <circle cx="85" cy="18" r="34" fill="#a51d3f"/>
+      <circle cx="72" cy="60" r="28" fill="#d14f64"/>
+      <circle cx="28" cy="61" r="22" fill="#7d243d"/>
+      <path d="M48 26 C 56 2, 62 -20, 82 -52" stroke="#c89c2d" stroke-width="7" fill="none"/>
+      <path d="M58 66 C 48 20, 26 14, 0 -20" stroke="#c89c2d" stroke-width="7" fill="none"/>
+    </g>
+
+    <!-- left lower bloom -->
+    <g transform="translate(180 744) scale(1.0)">
+      <path d="M0 0 C 24 -52, 70 -70, 110 -30 C 130 8, 110 62, 50 90 C 4 70, -18 34, 0 0Z" fill="#6d1c2d" opacity="0.92"/>
+      <circle cx="40" cy="26" r="32" fill="#b71b46"/>
+      <circle cx="85" cy="18" r="34" fill="#a51d3f"/>
+      <circle cx="72" cy="60" r="28" fill="#d14f64"/>
+      <circle cx="28" cy="61" r="22" fill="#7d243d"/>
+      <path d="M48 26 C 56 2, 62 -20, 82 -52" stroke="#c89c2d" stroke-width="7" fill="none"/>
+      <path d="M58 66 C 48 20, 26 14, 0 -20" stroke="#c89c2d" stroke-width="7" fill="none"/>
+    </g>
+
+    <!-- right lower bloom -->
+    <g transform="translate(742 744) scale(1.0)">
+      <path d="M0 0 C 24 -52, 70 -70, 110 -30 C 130 8, 110 62, 50 90 C 4 70, -18 34, 0 0Z" fill="#6d1c2d" opacity="0.92"/>
+      <circle cx="40" cy="26" r="32" fill="#b71b46"/>
+      <circle cx="85" cy="18" r="34" fill="#a51d3f"/>
+      <circle cx="72" cy="60" r="28" fill="#d14f64"/>
+      <circle cx="28" cy="61" r="22" fill="#7d243d"/>
+      <path d="M48 26 C 56 2, 62 -20, 82 -52" stroke="#c89c2d" stroke-width="7" fill="none"/>
+      <path d="M58 66 C 48 20, 26 14, 0 -20" stroke="#c89c2d" stroke-width="7" fill="none"/>
+    </g>
+  </g>
+
+  <!-- leaves and vines -->
+  <g fill="url(#goldSoft)" stroke="#ca913a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M288 274 C 238 238, 200 232, 164 256 C 194 304, 236 326, 282 320 Z"/>
+    <path d="M736 274 C 786 238, 824 232, 860 256 C 830 304, 788 326, 742 320 Z"/>
+    <path d="M288 748 C 238 784, 200 790, 164 766 C 194 718, 236 696, 282 702 Z"/>
+    <path d="M736 748 C 786 784, 824 790, 860 766 C 830 718, 788 696, 742 702 Z"/>
+  </g>
+
+  <!-- central teardrop / U form -->
+  <g filter="url(#softGlow)">
+    <path d="M512 290 C 388 290, 306 352, 306 468 C 306 602, 388 690, 512 690 C 636 690, 718 602, 718 468 C 718 352, 636 290, 512 290 Z M512 394 C 475 394, 442 405, 420 430 C 390 465, 390 520, 420 554 C 442 579, 475 590, 512 590 C 549 590, 582 579, 604 554 C 634 520, 634 465, 604 430 C 582 405, 549 394, 512 394 Z" fill="none" stroke="url(#gold)" stroke-width="28"/>
+  </g>
+
+  <!-- tiny accent dots -->
+  <g fill="#d7a34d">
+    <circle cx="294" cy="460" r="8"/>
+    <circle cx="730" cy="460" r="8"/>
+    <circle cx="512" cy="730" r="8"/>
+    <circle cx="512" cy="290" r="8"/>
+    <circle cx="392" cy="625" r="7"/>
+    <circle cx="632" cy="625" r="7"/>
   </g>
 </svg>
