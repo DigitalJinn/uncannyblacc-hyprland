@@ -1,35 +1,59 @@
 # Alacritty config for the UncannyBlacc Hyprland rice
-# Primary terminal: Alacritty
+# Primary terminal: Alacritty (JetBrains Mono fallback)
 
-[font]
-size = 12
+font:
+  normal:
+    family: "JetBrains Mono"
+    style: "Regular"
+  bold:
+    family: "JetBrains Mono"
+    style: "Bold"
+  italic:
+    family: "JetBrains Mono"
+    style: "Italic"
+  size: 12.0
 
-[font.normal]
-family = "JetBrains Mono"
-style = "Regular"
+window:
+  opacity: 0.95
+  padding:
+    x: 12
+    y: 10
 
-[font.bold]
-family = "JetBrains Mono"
-style = "Bold"
+# Keep scrollback modest for 8GB machines
+scrolling:
+  history: 5000
 
-[font.italic]
-family = "JetBrains Mono"
-style = "Italic"
+# Colors (UncannyBlacc palette)
+colors:
+  primary:
+    background: "#171412" # Ink
+    foreground: "#F2EBDD" # Bone
+  selection:
+    text: "#F2EBDD"
+    background: "#5B394F"
+  normal:
+    black:  "#171412"
+    red:    "#B85C3A"
+    green:  "#53624A"
+    yellow: "#C99A3E"
+    blue:   "#5B394F"
+    magenta:"#B85C3A"
+    cyan:   "#C99A3E"
+    white:  "#F2EBDD"
+  bright:
+    black: "#3C3632"
+    red:   "#D58D6D"
+    green: "#6F806B"
+    yellow:"#E3B65B"
+    blue:  "#7F5E72"
+    magenta:"#D2A17E"
+    cyan:  "#E9C97D"
+    white: "#FFF4E8"
 
-[window]
-opacity = 0.94
-padding = { x = 12, y = 10 }
-blur = true
+cursor:
+  style: Block
+  blink: true
 
-[window.colors]
-primary = { background = "#171412", foreground = "#F2EBDD" }
-selection = { background = "#5B394F", foreground = "#F2EBDD" }
-normal = { black = "#171412", red = "#B85C3A", green = "#53624A", yellow = "#C99A3E", blue = "#5B394F", magenta = "#B85C3A", cyan = "#C99A3E", white = "#F2EBDD" }
-bright = { black = "#3C3632", red = "#D58D6D", green = "#6F806B", yellow = "#E3B65B", blue = "#7F5E72", magenta = "#D2A17E", cyan = "#E9C97D", white = "#FFF4E8" }
-
-[cursor]
-style = "Beam"
-blink_interval = 500
-
-[scrolling]
-history = 20000
+# Misc
+env:
+  TERM: "alacritty"
